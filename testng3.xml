@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Test.Listeners"/>
+	</listeners>
+	<parameter name="URL" value="www.google.com"></parameter>
+  <test thread-count="5" name="RegressionSuit">
+	<groups>
+		<run>
+			<include name="Smoke"></include>
+		</run>
+	</groups>
+    <packages>
+		<package name="Test"></package>
+	</packages>
+  </test>
+</suite> 
