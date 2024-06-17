@@ -21,6 +21,13 @@ public class TestNGDemo1 {
 	public void GitDemo()
 	{
 		System.out.println("Hello");
+		System.out.println("New Demo");
+	}
+	
+	@Test
+	public void NewDemo()
+	{
+		System.out.println("New Demo");
 	}
 	
 	@Test(groups= {"Smoke"})
